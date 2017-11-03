@@ -6,10 +6,6 @@ if($_POST['formSubmit'] == "Submit")
   {
     $errorMessage .= "<li>You forgot to respond to this question!</li>";
   }
-  if(empty($_POST['formName']))
-  {
-    $errorMessage .= "<li>You forgot to enter a name!</li>";
-  }
   $varAnswer1 = $_POST['answer1'];
   if(!empty($errorMessage))
   {
